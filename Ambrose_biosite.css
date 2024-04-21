@@ -63,9 +63,10 @@ body {
 footer {
     background-color: var(--second-color);
     color: var(--letter-white);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    /* height: 75px; */
     font-weight: 400;
     padding-right: 10px;
 }
@@ -73,23 +74,34 @@ footer:hover {
     background-color: var(--main-color);
     
 }
+footer div {
+    align-items: center;
+    justify-content: center;
+}
 footer a {
     text-decoration: none;
     color: var(--letter-white);
-    margin: 10px 0 10px 0;
     padding: 5px;
+    /* margin: 20px 0 10px 0; */
 }
 footer a:hover {
     text-decoration: underline;
     font-size: 18px
-;}
-#copy-left {
-    float: left;
-    padding-left: 10px;
-}
-#right-side {
+    ;}
+    #copy-left {
+        float: left;
+        padding-left: 10px;
+        align-items: center;
+        margin: 20px 0 10px 0;
+        justify-content: center;
+    }
+    #right-side {
+    margin: 20px 0 10px 0;
     float: right;
     padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
 }
 
 /* landing page specific CSS */
@@ -240,7 +252,7 @@ footer a:hover {
     margin-left: 5px;
     background-color: var(--greyback);
     border-radius: 10px;
-    width: 100%;
+    /* width: 100%; */
 }
 .description p {
     color: var(--letter-white);
@@ -266,18 +278,22 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url(./images/disney.jpg);
-
+    background-image: url(./images/hobbies5.jpg);
+    
 }
 .card[for="c2"] {
-    background-image: url(./images/MaryJo_Jacob_Bridge_Hike.jpeg);
-
+    background-image: url(./images/hobbies2.jpeg);
+    
 }
 .card[for="c3"] {
-    background-image: url(./images/small-games.jpg);
-
+    background-image: url(./images/hobbies1.jpg);
+    
 }
 .card[for="c4"] {
-    background-image: url(./images/Yosemite.jpg);
-
+    background-image: url(./images/hobbies4.jpg);
+/* TODO:MAKE NEW CARD FOR BELOW IMAGE */
+    /* background-image: url(./images/hobbies3.jpg); */
+}
+.card[for="c5"] {
+    background-image: url(./images/hobbies3.jpg);
 }
