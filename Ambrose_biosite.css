@@ -1,7 +1,8 @@
 :root {
     --main-color: #9D7C35;
     --second-color: #1a1a1a;
-    --border-blue: #0D29B2;
+    /* --btn-blue: #091C64; */
+    --btn-blue: #428EA9;
     --letter-white: #F0f0f0;
     --greyback: #B3AEAA;
 
@@ -16,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+    font-family: 'Montserrat';
 }
 /* navbar css */
 .navbar {
@@ -58,6 +59,47 @@ body {
     background-color: var(--letter-white);
     color: var(--second-color);
     font-size: 21px;
+}
+/*Next Page/Back button Styling*/
+.btn {
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--letter-white);
+    margin: 15% 25px 10% 25px;
+    padding: 10px;
+    font-weight: 400;
+    
+}
+.btn a {
+    text-decoration: none;
+    color: var(--letter-white);
+}
+.btn:hover {
+    background-color: var(--btn-blue);
+    color: var(--letter-white);
+}
+.arrow-btn img{
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+.back-arrow {
+    float: left;
+    
+}
+.arrow-right {
+    float: right;
+}
+.arrow-left img {
+    float: left;
+}
+/* #btn-up {
+    margin-bottom: 30%;
+} */
+
+.right-btn {
+    float: right;
+
 }
 /* footer section */
 footer {
@@ -126,7 +168,7 @@ footer a:hover {
     margin-top:  5%;
 }
 .welcome-item {
-    /* border: var(--border-blue); */
+    /* border: var(--btn-blue); */
     padding: 5px;
 }
 .welcome-item img {
@@ -135,7 +177,7 @@ footer a:hover {
     border-radius: 10px;
 }
 .welcome-item p {
-    border-left: 3px solid var(--border-blue);
+    border-left: 3px solid var(--btn-blue);
     font-size: 18px;
     padding: 10px;
     max-width: 900px;
@@ -159,7 +201,7 @@ footer a:hover {
     margin-top:  5%;
 }
 .about-item {
-    border: var(--border-blue);
+    border: var(--btn-blue);
     padding: 20px;
 }
 .about-item img {
@@ -168,25 +210,27 @@ footer a:hover {
     border-radius: 10px;
 }
 .img-right {
-    border-right: 3px solid var(--border-blue);
+    border-right: 3px solid var(--main-color);
 }
 .img-left {
-    border-left: 3px solid var(--border-blue);
+    border-left: 3px solid var(--second-color);
 }
 .about-item h2 {
     font-size: 42px;
+    margin-bottom: 10px;
 }
 .about-item p {
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* hobbies page CSS */
 .hobby-intro {
-    margin-top: 85px;
+    margin: 5% 5% 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    font-weight: 400;
 }
 .hobby-intro p {
 
