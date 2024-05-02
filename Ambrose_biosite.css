@@ -1,7 +1,6 @@
 :root {
     --main-color: #9D7C35;
     --second-color: #1a1a1a;
-    /* --btn-blue: #091C64; */
     --btn-blue: #428EA9;
     --letter-white: #F0f0f0;
     --greyback: #B3AEAA;
@@ -28,6 +27,7 @@ body {
     width: 100%;
     top: 0;
 }
+
 #title {
     float: left;
     font-size: 28px;
@@ -35,7 +35,7 @@ body {
     letter-spacing: 3px;
     padding-left: 5px;
     margin-left: 10px;
-    text-align: center;
+    margin-top: 5px;
 }
 .nav-item {
     color: var(--second-color);
@@ -47,6 +47,9 @@ body {
     border-left: 1px solid var(--second-color);
     margin: 0 10px;
     letter-spacing: 1px;
+}
+.navbar:hover {
+    border-bottom: 3px solid var(--second-color);
 }
 .nav-right {
     float: right;
@@ -93,9 +96,6 @@ body {
 .arrow-left img {
     float: left;
 }
-/* #btn-up {
-    margin-bottom: 30%;
-} */
 
 .right-btn {
     float: right;
@@ -108,12 +108,11 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* height: 75px; */
     font-weight: 400;
     padding-right: 10px;
 }
 footer:hover {
-    background-color: var(--main-color);
+    border:3px solid var(--main-color);
     
 }
 footer div {
@@ -124,13 +123,12 @@ footer a {
     text-decoration: none;
     color: var(--letter-white);
     padding: 5px;
-    /* margin: 20px 0 10px 0; */
 }
 footer a:hover {
     text-decoration: underline;
     font-size: 18px
     ;}
-    #copy-left {
+#copy-left {
         float: left;
         padding-left: 10px;
         align-items: center;
@@ -147,16 +145,11 @@ footer a:hover {
 }
 
 /* landing page specific CSS */
-/* .welcome-page {
-    margin-top: 5%;
-    align-items: center;
-    display: flex;
-} */
+
 .welcome-page {
     width: 100%;
     height: 100%;
     background-image: url(./images/wakeForestCampus.jpg);
-    /* opacity: 0.9; */
 }
 .welcome-grid {
     display: grid;
@@ -164,17 +157,18 @@ footer a:hover {
     grid-template-columns: auto auto;
     padding: 10px;
     justify-content: center; 
-     align-items: center;
-    margin-top:  5%;
+    align-items: center;
+    margin-top:  10%;
+    margin-bottom: 2%;
 }
 .welcome-item {
-    /* border: var(--btn-blue); */
     padding: 5px;
 }
 .welcome-item img {
     max-width: 320px;
     max-height: 320px;
     border-radius: 10px;
+    /* border-right: 3xpx solid var(--btn-blue); */
 }
 .welcome-item p {
     border-left: 3px solid var(--btn-blue);
@@ -182,8 +176,10 @@ footer a:hover {
     padding: 10px;
     max-width: 900px;
     line-height: 1.3;
+    padding: 10px;
+    align-items: center;
 }
-.welcome-item h2 figcaption {
+.welcome-item h2 {
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -296,7 +292,6 @@ footer a:hover {
     margin-left: 5px;
     background-color: var(--greyback);
     border-radius: 10px;
-    /* width: 100%; */
 }
 .description p {
     color: var(--letter-white);
@@ -335,8 +330,6 @@ input:checked + label .description {
 }
 .card[for="c4"] {
     background-image: url(./images/hobbies4.jpg);
-/* TODO:MAKE NEW CARD FOR BELOW IMAGE */
-    /* background-image: url(./images/hobbies3.jpg); */
 }
 .card[for="c5"] {
     background-image: url(./images/hobbies3.jpg);
